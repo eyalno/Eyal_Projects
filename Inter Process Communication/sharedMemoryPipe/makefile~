@@ -1,0 +1,4 @@
+CFLAGS= -ansi -pedantic -Wall -Werror  -g ping.c -o ping
+game: 
+	gcc $(CFLAGS)  
+
