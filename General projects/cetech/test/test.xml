@@ -1,0 +1,9 @@
+<message>
+	<Id>1</Id>
+	<TimeArrival></TimeArrival>
+	<ClientIp>1.1.1.1</ClientIp>
+	<ServerIp>1.1.1.2</ServerIp>
+	<Type>Request</Type>
+	<RequestedData1>GetServerIP</RequestedData1>
+	<RequestedData2>GetServerName</RequestedData2>
+</message>

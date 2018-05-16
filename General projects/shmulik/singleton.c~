@@ -1,0 +1,72 @@
+#include <iostream>
+
+using namespace std;
+//lazy
+class Singleton
+{
+private:
+    static bool instanceFlag;
+    static Singleton *single;
+    Singleton()
+    {
+        //private constructor
+    }
+public:
+    static Singleton* getInstance();
+    void method();
+    ~Singleton()
+    {
+        instanceFlag = false;
+    }
+};
+
+bool Singleton::instanceFlag = false;
+Singleton* Singleton::single = NULL;
+Singleton* Singleton::getInstance()
+{
+    if(! instanceFlag)
+    {
+	lock
+        single = new Singleton();
+        instanceFlag = true;
+        unlock
+	return single;
+    }
+    else
+    {
+        return single;
+    }
+}
+
+void Singleton::method()
+{
+    cout << "Method of the singleton class" << endl;
+}
+
+
+
+
+
+//eager
+public class Singleton {
+	private: 
+		static  Singleton* instance = new Singleton();
+ 
+    		Singleton() {}
+ 
+	public:
+		
+		static Singleton getInstance() {
+        
+			return instance;
+    }
+}
+Singleton* Singleton::instance= new Single;
+
+
+
+
+
+
+
+//factory
